@@ -1,0 +1,59 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    min-width: 375px;
+    margin: 0;
+}
+h1{
+    padding: 1.5em 2em 0 2em;
+    margin: 0;
+}
+input:focus{
+    outline: none;
+}
+header a{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0 0.9em 0;
+}
+header img{
+    max-width: 48%;
+}
+#presentation{
+    text-align: center;
+}
+#presentation input{
+    border: hidden;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 135px;
+}
+#presentation div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background-color: #eaeaea;
+    width: 100%;
+    padding: 1em 0;
+    box-shadow: inset 0px 8px 3px -5px #cecece;/*negative spread value hides other shadows*/
+}
+#presentation div:last-child{
+    background-color: #F6F6F6;
+}
+#presentation p{
+    padding: 0 1em 1em;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+#presentation button{
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 2.5em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
