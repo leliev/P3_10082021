@@ -1,0 +1,16 @@
+@-webkit-keyframes backgroundfill {
+    0% {
+      background-size: 100% 0%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+@keyframes backgroundfill {
+    0% {
+      background-size: 100% 0%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
