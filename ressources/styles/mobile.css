@@ -1,10 +1,11 @@
+/*----Loading Page----*/
 #loadscreen{
-    -webkit-animation: fadeout 3s 400ms both;
-    animation: fadeout 3s 400ms both;
+    -webkit-animation: fadeout 3s both;
+    animation: fadeout 3s both;
 }
 #pagewrap{
-    -webkit-animation: fadein 5s 600ms both;
-    animation: fadein 5s 600ms both;
+    -webkit-animation: fadein 3s both;
+    animation: fadein 3s both;
 }
 #loader{
     position: absolute;
