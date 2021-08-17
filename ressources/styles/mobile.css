@@ -1,3 +1,24 @@
+#loadscreen{
+    -webkit-animation: fadeout 3s 400ms both;
+    animation: fadeout 3s 400ms both;
+}
+#pagewrap{
+    -webkit-animation: fadein 5s 600ms both;
+    animation: fadein 5s 600ms both;
+}
+#loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #F5EDFF;
+    border-radius: 50%;
+    border-top: 16px solid #9356DC;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
 /*----Page wide style----*/
 body{
     font-family: 'Roboto', sans-serif;
@@ -199,6 +220,9 @@ footer h3{
 }
 footer a{
     color: #fff;
+}
+footer a:hover{
+    border-bottom: 1px solid #fff;
 }
 footer .flexbox{
     flex-direction: column;
