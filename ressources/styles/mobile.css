@@ -32,6 +32,7 @@ h1{
 }
 h2{
     margin-top: 2em;
+    display: inline-block;
 }
 h3{
     margin: 0.8em 0 0 0;
@@ -46,7 +47,7 @@ a{
 ul{
     list-style-type: none;
 }
-button{
+.btn-main{
     border: none;
     border-radius: 25px;
     margin-bottom: 2.5em;
@@ -57,9 +58,9 @@ button{
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 10px 5px rgba(45, 45, 45, 0.1);
 }
-button:hover{
+.btn-main:hover{
     cursor: pointer;
-    opacity: 0.95;
+    opacity: 0.85;
     box-shadow: 0px 10px 5px rgba(45, 45, 45, 0.5);
 }
 
@@ -72,6 +73,9 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+}
+.greyback{
+    background-color: #F6F6F6;
 }
 /*----Header Section----*/
 header a{
@@ -102,9 +106,6 @@ header img{
     padding: 1em 0;
     box-shadow: inset 0px 8px 3px -5px #cecece;/*negative spread value hides other shadows*/
 }
-#presentation div:last-child{
-    background-color: #F6F6F6;
-}
 #presentation p{
     padding: 0 1em 1em;
     font-size: 1.1em;
@@ -112,10 +113,6 @@ header img{
     color: rgb(92, 92, 92);
 }
 /*----Operation Section----*/
-.greyback{
-    padding-top: 1em;
-    background-color: #F6F6F6;
-}
 #operation .flexbox{
     flex-direction: column;
     padding-left: 0.8em;
@@ -164,17 +161,26 @@ header img{
     margin-bottom: 1em;
     position: relative;
 }
+.thumbnail:hover{
+    box-shadow: 0px 10px 5px rgba(45, 45, 45, 0.5);
+}
 .thumbnail img{
     width: 100%;
     height: 175px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
+.btn-hearts{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 35px;
+    right: 50px;
+    padding: 0;
+}
 .thumbnail i{
     position: absolute;
-    bottom: 10px;
-    right: 25px;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 .thumbnail .fas{
     color: transparent;
