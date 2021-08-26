@@ -20,6 +20,22 @@
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
+/*----Index Specific----*/
+h1{
+    padding: 1.5em 2em 0 2em;
+}
+h2{
+    margin-top: 2em;
+    display: inline-block;
+}
+h3{
+    margin: 0.8em 0 0 0;
+}
+.btn-main{
+    margin-bottom: 2.5em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+}
 /*-----Presentation Section----*/
 #presentation{
     text-align: center;
@@ -106,31 +122,12 @@
     border-radius: 20px 20px 0 0;
 }
 .btn-hearts{
-    background-color: transparent;
-    border: none;
-    position: absolute;
     bottom: 35px;
     right: 50px;
-    padding: 0;
 }
-.thumbnail i{
+.btn-hearts i{
     position: absolute;
     font-size: 1.6rem;
-}
-.thumbnail .fas{
-    color: transparent;
-}
-.thumbnail i:hover{
-    font-weight: bold;
-    color: transparent;
-    background: linear-gradient(to top, #FF79DA, #9356DC);
-    background-size: 100% 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-animation: backgroundfill 0.5s linear;
-    animation: backgroundfill 0.5s linear;
 }
 .thumbcaption{
     position: relative;
