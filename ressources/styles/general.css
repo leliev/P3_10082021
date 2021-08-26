@@ -1,0 +1,122 @@
+
+/*----Page wide style----*/
+body{
+    font-family: 'Roboto', sans-serif;
+    min-width: 375px;
+    margin: 0;
+}
+h1{
+    padding: 1.5em 2em 0 2em;
+    margin: 0;
+}
+h2{
+    margin-top: 2em;
+    display: inline-block;
+}
+h3{
+    margin: 0.8em 0 0 0;
+}
+input[type=text]:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.btn-main{
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 2.5em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 10px 5px rgba(45, 45, 45, 0.1);
+}
+.btn-main:hover{
+    cursor: pointer;
+    opacity: 0.85;
+    box-shadow: 0px 10px 5px rgba(45, 45, 45, 0.5);
+}
+
+.limit-width{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.greyback{
+    background-color: #F6F6F6;
+}
+/*----Header Section----*/
+#return-pic{
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    font-size: 1.2em;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    padding: 1.4em 0 0.5em 0;
+}
+#logo a{
+    text-align: center;
+}
+#logo img{
+    max-width: 85%;
+}
+.back-img{
+    width: 100%;
+    object-fit: cover;
+    height: 275px;
+}
+
+/*----Footer----*/
+footer{
+    background-color: #353535;
+}
+footer h3{
+    color: #fff;
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 100;
+    padding: 1em 0;
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    border-bottom: 1px solid #fff;
+}
+footer .flexbox{
+    flex-direction: column;
+    padding: 0 0 1.5em 0;
+}
+footer li{
+    padding-bottom: 0.5em;
+}
+footer i{
+    font-size: 0.8em;
+    width: 19px;
+}
+@media screen and (min-width: 1281px) {
+    .flexbox{
+        flex-wrap: nowrap;
+        gap: 1em;
+    }
+    #operation .flexbox{
+        flex-direction: row;
+    }
+    footer .flexbox{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
