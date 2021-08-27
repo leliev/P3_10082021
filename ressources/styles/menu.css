@@ -1,3 +1,4 @@
+/*----Menu Specific----*/
 h1{
     font-family: 'Shrikhand', sans-serif;
     font-size: 1.8em;
@@ -11,17 +12,23 @@ h2{
 }
 h3{
     margin: 0 0 0.2em 0;
+    font-size: 1.1em;
     font-weight: 500;
+    overflow: hidden;/*hidden+ellipsis hides text overflow and add dots*/
+    text-overflow: ellipsis;
 }
 p{
     margin: 0;
     font-weight: 300;
     font-size: 0.95em;
+    overflow: hidden;/*hidden+ellipsis hides text overflow and add dots*/
+    text-overflow: ellipsis;
 }
 span{
     font-weight: 500;
     font-size: 0.96em;
-    padding-top: 1.7em;
+    margin-left: 0.7em;
+    align-self: flex-end;/*position without padding*/
 }
 main{
     margin-top: 222px;
@@ -31,10 +38,19 @@ main{
     animation: slidein 1s ease-out;
 }
 .btn-main{
-    margin: 2.5em;
+    margin: 2.4em 0 4em 0;
     padding: 1em 3em;
     font-size: 1em;
 }
+.btn-hearts{
+    top: 8px;
+    right: 43px;
+}
+.btn-hearts i{
+    position: absolute;/*The 2 <i> can be on top of each other*/
+    font-size: 1.8em;
+}
+/*----Header/title Section----*/
 .back-img{
     position: fixed;
     z-index: -1;
@@ -42,13 +58,19 @@ main{
 #title-box{
     position: relative;
 }
-.btn-hearts{
-    top: 8px;
-    right: 43px;
+/*----Menu Section----*/
+.dish-box{
+    max-width: 100%;/*so the box don't grow*/
+    animation: fullfadein 1500ms 1000ms both;
+    transition: 700ms ease-in;
 }
-.btn-hearts i{
-    position: absolute;
-    font-size: 1.8em;
+.dish-box.main-course{
+    animation-delay: 1200ms;
+    transition: 700ms ease-out;
+}
+.dish-box.dessert{
+    animation-delay: 1500ms;
+    transition: 700ms ease-out;
 }
 .underline{
     width: 42px;
@@ -58,29 +80,34 @@ main{
 .dish{
     box-shadow: 0px 4px 10px 13px rgba(45, 45, 45, 0.05);
     padding: 0.7em;
+    margin-bottom: 1em;
     border-radius: 1em;
     display: flex;
-    overflow: hidden;
+    overflow: hidden;/*hides check-slides outside the dish box*/
 }
 .dish-text{
-    display: flex;
-    flex-direction: column;
     flex: 1;
     overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;/*would be broken words are covered*/
 }
+/*Check-slide*/
 .check-slide{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0;
-    margin: -0.7em -0.7em -0.7em 1.7em;
+    margin: -0.9em -0.9em -0.9em 1.5em;/*cover the padding of dish*/
     transition: 0.8s;
+    border: none;
+    padding: 0;
 }
 .check-slide i{
     color: #fff;
     font-size: 1.5em;
+}
+.check-slide:hover{
+    cursor: pointer;
 }
 .dish:hover .check-slide{
     width: 20%;
@@ -90,5 +117,22 @@ main{
     transition: 450ms 200ms ease-out;
 }
 .center-box{
-    text-align: center;
+    text-align: center;/*easy center for button commande*/
+}
+/*----Responsive rule----*/
+@media screen and (min-width: 801px) {
+    #menu-box.flexbox{
+        align-content: center;
+    }
+    .dish-box{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1281px){
+    #menu-box.flexbox{
+        justify-content: center;
+    }
+    .dish-box{
+        width: 30%;
+    }
 }

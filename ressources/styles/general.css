@@ -59,6 +59,7 @@ ul{
 }
 .flexbox{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -106,7 +107,6 @@ footer a:hover{
     border-bottom: 1px solid #fff;
 }
 footer .flexbox{
-    flex-direction: column;
     padding: 0 0 1.5em 0;
 }
 footer li{
@@ -116,16 +116,15 @@ footer i{
     font-size: 0.8em;
     width: 19px;
 }
+/*----Responsive rule----*/
 @media screen and (min-width: 1281px) {
     .flexbox{
+        flex-direction: row;
         flex-wrap: nowrap;
         gap: 1em;
     }
-    #operation .flexbox{
-        flex-direction: row;
-    }
+
     footer .flexbox{
-        flex-direction: row;
         justify-content: space-around;
     }
 }
