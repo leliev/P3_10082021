@@ -42,10 +42,9 @@ ul{
 }
 .btn-hearts i:hover{
     font-weight: bold;
-    color: transparent;
     background: linear-gradient(to top, #FF79DA, #9356DC);
     background-size: 100% 100%;
-    background-position: bottom;
+    background-position: bottom;/*from bottom to top*/
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
