@@ -111,7 +111,14 @@ main{
 .dish:hover .check-slide{
     width: 20%;
 }
+.dish:active .check-slide{
+    width: 20%;
+}
 .dish:hover i{
+    transform: rotate(1turn);
+    transition: 450ms 200ms ease-out;
+}
+.dish:active i{
     transform: rotate(1turn);
     transition: 450ms 200ms ease-out;
 }

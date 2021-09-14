@@ -54,6 +54,17 @@ ul{
     -webkit-animation: backgroundfill 0.5s linear;
     animation: backgroundfill 0.5s linear;
 }
+.btn-hearts i:active{
+    font-weight: bold;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    background-size: 100% 100%;
+    background-position: bottom;/*from bottom to top*/
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: backgroundfill 0.5s linear;
+    animation: backgroundfill 0.5s linear;
+}
 .limit-width{
     width: 90%;
     max-width: 1400px;
