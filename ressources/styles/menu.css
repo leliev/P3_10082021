@@ -60,16 +60,13 @@ main{
 /*----Menu Section----*/
 .dish-box{
     max-width: 100%;/*so the box don't grow*/
-    animation: fullfadein 1500ms 1000ms both;
-    transition: 700ms ease-in;
+    animation: fullfadein 1500ms ease-out 1000ms both;
 }
 .dish-box.main-course{
-    animation-delay: 1200ms;
-    transition: 700ms ease-out;
+    animation-delay: 1300ms;
 }
 .dish-box.dessert{
-    animation-delay: 1500ms;
-    transition: 700ms ease-out;
+    animation-delay: 1600ms;
 }
 .underline{
     width: 42px;
