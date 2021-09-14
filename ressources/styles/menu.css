@@ -47,7 +47,6 @@ main{
     right: 43px;
 }
 .btn-hearts i{
-    position: absolute;/*The 2 <i> can be on top of each other*/
     font-size: 1.8em;
 }
 /*----Header/title Section----*/
@@ -56,7 +55,7 @@ main{
     z-index: -1;
 }
 #title-box{
-    position: relative;
+    position: relative;/*for the btn-hearts position*/
 }
 /*----Menu Section----*/
 .dish-box{

@@ -40,6 +40,9 @@ ul{
 .btn-hearts .fas{
     color: transparent;
 }
+.btn-hearts i{
+    position: absolute;/*The 2 <i> can be on top of each other*/
+}
 .btn-hearts i:hover{
     font-weight: bold;
     background: linear-gradient(to top, #FF79DA, #9356DC);
