@@ -1,11 +1,11 @@
 /*----Loading Page----*/
 #loadscreen{
-    -webkit-animation: fadeout 3s both;
-    animation: fadeout 3s both;
+    -webkit-animation: fadeout 5s both;
+    animation: fadeout 5s both;
 }
 #pagewrap{
-    -webkit-animation: fadein 3s both;
-    animation: fadein 3s both;
+    -webkit-animation: fadein 5s both;
+    animation: fadein 5s both;
 }
 #spinner{
     position: absolute;
@@ -97,10 +97,10 @@ h3{
     font-size: 0.8em;
     padding: 0.3em 0.62em;
 }
-#operation li:last-child{
+#operation li:hover{
     background-color: #F5EDFF;
 }
-#operation li:last-child i{
+#operation li:hover i{
     color: #9356DC;
 }
 /*----Restaurants Section----*/
